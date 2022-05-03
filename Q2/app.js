@@ -14,19 +14,21 @@ console.log("All products: ", item)
 
 // 1. Filter and show the product that will be bought when you don't have much money I mean Cheap one
 
-var collection = item.filter(function(e) {
-    return e.price < 100;
-});
+// The cheapest product will be:
+var minimum = Math.min.apply(Math, item.map(function(e) {
+    return e.price;
+}))
 
-console.log("Cheaper products: ", collection)
+console.log("Cheaper product cost: ", minimum)
 
 // 2 . Filter and show the product that will be expensive in the array
 
-collection = item.filter(function(e) {
-    return e.price >= 100;
-});
+// The expensive product will be:
+var maximum = Math.max.apply(Math, item.map(function(e) {
+    return e.price;
+}))
 
-console.log("Expensive products: ", collection)
+console.log("Expensive product cost: ", maximum);
 
 // 3 . Calculate the full price of all product combined
 
@@ -39,12 +41,15 @@ console.log("Total price: ", sum)
 
 // 4 . Calculate the full price of all product combined and remove product that are under the 10 dollar
 
-sum = 0;
+// Products that cost not less than $10
 collection = item.filter(function(e) {
     return e.price >= 10;
 });
 console.log("Items >= $10: ", collection)
 
+// Sum of products' price not less than $10
+
+sum = 0;
 collection.forEach(function(e) {
     sum += e.price;
 });
