@@ -5,23 +5,24 @@ body {
 input, textarea {
     width: 100%;
     border: none;
-    border-bottom: 2px solid rgb(36, 34, 34);
-    font-family: 'Play', sans-serif;
+    border-bottom: 1px solid rgb(36, 34, 34);
+    font-family: TW Cen MT;
     padding-top: 5%;
-    transition: border 0.5s;
-    outline: none;
-    color: #fff;
+    font-size: medium;
     background: transparent;
 }
 
 .description {
-  padding-top: 10%;
+  padding-top: 2%;
+}
+textarea {
+  padding-top: 2%;
 }
 
 button[type = submit] {
     border: none;
     width: 190px;
-    background: rgb(224, 120, 94);
+    background: rgb(243, 105, 63);
     color: #ffffff;
     line-height: 25px;
     padding: 10px 0px;
@@ -39,10 +40,8 @@ button[type = submit] {
   margin: 5% auto;
   padding: 10px;
   background-color: #fff;
-  opacity: 0.9;
   width: 80%;
   overflow: auto;
-  /* border-color: #fff; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
 
@@ -50,17 +49,16 @@ button[type = submit] {
   margin-left: 5%;
   margin-top: 10%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bolder;
+  font-size: 70px;
 }
 
 .survey {
-  width: 58%;
+  width: 50%;
   float: left;
   margin-left: 5%;
 }
 
 .presentation {
-  /* width:30%; */
   overflow: hidden;
   margin-right: 10%;
 }
@@ -80,4 +78,14 @@ button[type = submit] {
 
 .lastname {
   overflow:hidden;
+}
+
+p {
+  font-family: Tw Cen MT;
+  font-size: larger;
+}
+
+.presentation h2 {
+  font-family: Tw Cen MT Condensed;
+  font-size: 40px;
 }
