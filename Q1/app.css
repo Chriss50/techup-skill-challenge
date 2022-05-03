@@ -30,12 +30,12 @@ button[type = submit] {
 
 
 
-.abt_content {
+.info {
     width: 90%;
     padding-top: 0.5em;
   }
   
-.group {
+.m_design {
   margin: 5% auto;
   padding: 10px;
   background-color: #fff;
@@ -46,7 +46,7 @@ button[type = submit] {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
 
-.group h1 {
+.m_design h1 {
   margin-left: 5%;
   margin-top: 10%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
